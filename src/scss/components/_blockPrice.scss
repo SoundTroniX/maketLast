@@ -1,0 +1,70 @@
+.prices {
+    display: flex;
+    flex-direction: column;
+    padding-left: 330px;
+}
+
+.prices__title {
+    padding: 16px;
+    padding-left: 26px;
+    padding-top: 34px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: .01em;
+    position: relative;
+
+}
+// price container style 
+
+.prices__container {
+  margin-left: 24px;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 500px 200px 200px 120px;
+    grid-template-rows: repeat(8, 60px);
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.p::nth-child(1) {
+  background-color: #F8F8F8;
+
+}
+
+.prices__header_period{
+    /* Занимает один ряд и
+    растягивается на две колонки */
+    grid-column: span 2;
+  }
+
+  .prices__commercial_offer_text {
+    padding-top: 30px;
+    grid-column: span 4;
+  }
+
+  .prices__main_title,
+  .prices__header_title {
+    padding-left: 24px;
+  }
+
+// price main style
+
+.prices__main_button {
+    background-image: url(/src/imgblock4/buttonBlock4.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 32px;
+}
+
+.prices__commercial_offer_link::after {
+  content: url(/src/imgblock4/ic_moreBlock4.svg);
+  text-align: center;
+  position: relative;
+  top: 6px;
+}
+
+.prices__commercial_offer_link {
+  padding-top: 20px;
+}

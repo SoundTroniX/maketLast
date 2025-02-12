@@ -1,0 +1,938 @@
+@use '../abstracts/mixins';
+
+@include mixins.xl {
+	.header {
+		font-size: 25px;
+	}
+}
+
+@include mixins.xxl {
+}
+
+// Стили 1366px
+
+@media (min-width: 1366px) {
+	.page {
+		margin: 0 auto;
+		max-width: 1440px;
+	}
+
+	// Скрытие свайпера 
+    .types-container,
+	.swiper-container {
+		display: none;
+		visibility: hidden;
+	}
+
+	.header {
+		/*
+	  Header стили 1120px и больше
+	  */
+
+		.header__repair {
+			background-image: url(/src/img1.3/ic_repair.svg);
+			width: 40px;
+			height: 40px;
+		}
+
+		.header__checkstatus {
+			background-image: url(/src/img1.3/ic_checkstatus.svg);
+			width: 40px;
+			height: 40px;
+		}
+
+		.header__menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 90px;
+			max-width: 1600px;
+			margin-bottom: -65px;
+			padding-top: 40px;
+		}
+
+		.header__repair-status,
+		.header__request {
+			display: flex;
+			align-items: center;
+		}
+
+		.header__menu-second,
+		.header__menu-first {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 16px;
+		}
+
+		.header__menu-first {
+			margin-left: 25px;
+		}
+
+		.header__menu-second {
+			margin-right: 25px;
+		}
+
+		.header__call,
+		.header__chat,
+		.header__profile,
+		.header__divider,
+		.header__logo,
+		.header__burger {
+			display: none;
+			visibility: hidden;
+		}
+
+		.header__text1,
+		.header__text2 {
+			color: rgb(27, 28, 33);
+			font-family: TTLakes;
+			font-size: 16px;
+			font-weight: 500;
+			margin-right: 5px;
+		}
+		font-size: 30px;
+	}
+
+	.menu__header_close {
+		background-image: url(/src/img1.4/ic_burger.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__header_search {
+		background-image: url(/src/img1.4/ic_search.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 25px;
+	}
+
+	.header__logo {
+		margin-right: 50px;
+	}
+
+	/* 
+Стили для меню
+*/
+	.menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		width: 320px;
+		margin: 0 auto;
+		height: 100vh;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+			-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+	}
+
+	.menu__list {
+		display: flex;
+	}
+
+	.menu__ul {
+		width: 320px;
+	}
+
+	a {
+		font-size: 18px;
+		font-family: TTLakes;
+		font-weight: 500;
+		vertical-align: center;
+	}
+
+	.menu__list a {
+		display: block;
+		height: 50px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 25px;
+	}
+
+	.menu__list_active {
+		color: rgb(126, 126, 130);
+		padding-left: 0;
+	}
+
+	.menu__list_active::before {
+		content: url(/src/img1.4/highlight.svg);
+		height: 40px;
+		width: 4px;
+		position: absolute;
+		left: 0px;
+	}
+
+	.menu__list a:hover {
+		background-color: darkseagreen;
+		opacity: 0.7;
+		transition: 0.5s linear;
+	}
+
+	/* 
+Стили для footer
+*/
+
+	.footer__call {
+		background-image: url(/src/img1.4/ic_chat\ copy.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__chat {
+		background-image: url(/src/img1.4/ic_chat.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__profile {
+		background-image: url(/src/img1.4/ic_profile.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__footer_icons {
+		display: flex;
+		margin-bottom: 15px;
+		margin-left: 25px;
+		gap: 15px;
+	}
+
+	.footer__contacts {
+		display: flex;
+		flex-direction: column;
+		padding-left: 25px;
+	}
+
+	.footer__email {
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.footer__number {
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.footer__lang {
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-bottom: 30px;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.footer__lang_active {
+		color: rgb(126, 126, 130);
+	}
+}
+@media (min-width: 767px) and (max-width: 1365px) {
+	body {
+		margin: 0 auto;
+		max-width: 1140px;
+	}
+
+	// Скрытие свайпера 
+    .types-container,
+	.swiper-container {
+		display: none;
+		visibility: hidden;
+	}
+
+	// Menu STYLES 
+	.menu {
+		z-index: 50;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: fixed;
+		width: 320px;
+		margin: 0 auto;
+		height: auto;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+			-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+	}
+
+	// overlay
+
+	.menu__close {
+		display: none;
+		visibility: hidden;
+	}
+
+	.menu__list {
+		display: flex;
+	}
+
+	.menu__ul {
+		width: 320px;
+	}
+
+	a {
+		font-size: 18px;
+		font-family: TTLakes;
+		font-weight: 500;
+		vertical-align: center;
+	}
+
+	.menu__list a {
+		display: block;
+		height: 50px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 25px;
+	}
+
+	.menu__list_active {
+		color: rgb(126, 126, 130);
+		padding-left: 0;
+	}
+
+	.menu__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		height: 88px;
+	}
+    
+
+	.header__logo {
+		margin-left: 37px;
+	}
+
+	.menu__header_burger {
+		background-image: url(/src/img1.4/ic_burger.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__header_search {
+		background-image: url(/src/img1.4/ic_search.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__list_active::before {
+		content: url(/src/img1.4/highlight.svg);
+		height: 40px;
+		width: 4px;
+		position: absolute;
+		left: 0px;
+	}
+
+	.menu__list a:hover {
+		background-color: darkseagreen;
+		opacity: 0.7;
+		transition: 0.5s linear;
+	}
+
+	.footer__call {
+		background-image: url(/src/img1.4/ic_chat\ copy.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__chat {
+		background-image: url(/src/img1.4/ic_chat.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer__profile {
+		background-image: url(/src/img1.4/ic_profile.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.menu__footer_icons {
+		display: flex;
+		margin-bottom: 15px;
+		margin-left: 25px;
+		gap: 15px;
+	}
+
+	.footer__contacts {
+		display: flex;
+		flex-direction: column;
+		padding-left: 25px;
+	}
+
+	.footer__email {
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.footer__number {
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.footer__lang {
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-bottom: 30px;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.footer__lang_active {
+		color: rgb(126, 126, 130);
+	}
+
+	// Скрытие меню
+
+
+	//  Padding from 768px
+	.main__section {
+		padding-left: 0px;
+	}
+	.article {
+		padding-left: 0px;
+	}
+	.types {
+		padding-left: 0px;
+	}
+	.prices {
+		padding-left: 0px;
+	}
+
+	.header {
+		background: rgb(255, 255, 255);
+	}
+
+	/*
+  Header стили 768px - 1120px
+  */
+
+	.header__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 88px;
+		border-bottom: solid 1px rgb(217, 255, 245);
+		margin-bottom: 0;
+		padding: 0;
+	}
+
+	.header__burger {
+		background-image: url(/src/img1.3/burger.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__call {
+		background-image: url(/src/img1.3/ic_call.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__chat {
+		background-image: url(/src/img1.3/ic_chat.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__profile {
+		background-image: url(/src/img1.3/ic_profile.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__repair {
+		background-image: url(/src/img1.3/ic_repair.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__checkstatus {
+		background-image: url(/src/img1.3/ic_checkstatus.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	.header__menu-second,
+	.header__menu-first {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.header__menu-first {
+		margin-left: 15px;
+	}
+
+	.header__menu-second {
+		margin-right: 25px;
+	}
+	.header__divider {
+		background-image: url(/src/img1.3/divider.svg);
+		width: 2px;
+		height: 32px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.header__text1,
+	.header__text2 {
+		display: none;
+		visibility: hidden;
+	}
+
+	/* 
+  Стили для Title  768px - 1120px 
+  */
+
+	.main__h1 {
+		font-family: TTLakes;
+		color: rgb(27, 28, 33);
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	.main__title {
+		margin-top: 25px;
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: start;
+	}
+	.main__highlight {
+		width: 4px;
+		height: 40px;
+	}
+	/*
+  Стили слайд меню 768px - 1120px 
+  */
+
+	.nav__list::-webkit-scrollbar {
+		display: none;
+	}
+	.nav__slide {
+		overflow: hidden;
+		margin-bottom: 25px;
+	}
+
+	.nav__list {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		padding-bottom: 20px;
+	}
+
+	.nav__item {
+		padding: 7px 15px 7px 15px;
+		border: 2px solid transparent;
+	}
+
+	.nav__item:hover {
+		border: 2px solid rgb(184, 255, 236);
+		border-radius: 6px;
+		background-color: rgb(255, 255, 255);
+	}
+
+	.nav__link {
+		white-space: pre;
+		color: rgb(126, 126, 130);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.nav__list:first-child::after {
+		content: url(/src/img1.3/fade\ copy.png);
+		position: absolute;
+		background-position: 100% 50%;
+		width: 24px;
+		height: 40px;
+		z-index: 20;
+		right: 0;
+	}
+
+	.nav__list:first-child::before {
+		content: url(/src/img1.3/fade\ copy.png);
+		position: absolute;
+		background-position: 100% 50%;
+		width: 24px;
+		height: 40px;
+		z-index: 20;
+		left: 15px;
+		transform: rotate(180deg);
+	}
+
+
+
+	/*
+  Стили первого блока 768px - 1120px 
+  */
+
+    .main {
+		width: 100%;
+	}
+	.main__section {
+		width: 100%;
+	}
+
+	.main__text {
+		min-width: 360px;
+		margin-top: 20px;
+	}
+
+	.main__about {
+		max-width: 1366px;
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+
+	.main__text_block {
+		height: 130px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		transition-duration: 0.5s;
+	}
+
+	.main__text_block-show {
+		height: auto;
+		margin-bottom: 10px;
+		transition-duration: 0.5s;
+	}
+
+	.main__p1 {
+		margin-left: 16px;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		margin-bottom: 14px;
+		min-width: 288px;
+		max-height: 90px;
+	}
+
+	.main__p4,
+    .main__p3,
+	.main__p2 {
+		margin-left: 16px;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		margin-bottom: 14px;
+		min-width: 288px;
+	}
+
+	.readmore__expand {
+		background-image: url(/src/img1.3/ic_expand.svg);
+		width: 25px;
+		height: 20px;
+	}
+
+	.readmore__text {
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.readmore {
+		display: flex;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		padding: 0;
+		justify-content: space-between;
+		border: none;
+		outline: none;
+		background-color: rgb(248, 248, 248);
+	}
+
+	.main__picture {
+		padding-top: 10px;
+		margin-left: 40px;
+		margin-left: auto;
+		margin-right: 20px;
+	}
+
+	.main__picture-1 {
+		width: 360px;
+		height: 260px;
+	}
+
+	.main__text--hidden {
+		display: none;
+		visibility: hidden;
+	}
+
+	// Ремонтируемые устройства стили from 768px
+
+	.article__h2 {
+		font-family: TTLakes;
+		font-size: 16px;
+		color: #7e7e82;
+		min-height: 56px;
+	}
+
+	.article_container {
+		padding-top: 50px;
+		padding-left: 32px;
+		margin-left: 0;
+		max-width: 1140px;
+	}
+
+	.article__link {
+		display: block;
+	}
+	//
+	.article__list {
+		height: 165px;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		-moz-column-gap: 32px;
+		column-gap: 24px;
+		margin-bottom: 25px;
+		overflow: hidden;
+		transition-duration: 0.5s;
+	}
+
+	.article__list_show {
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		-moz-column-gap: 32px;
+		column-gap: 24px;
+		margin-bottom: 25px;
+		transition-duration: 0.5s;
+	}
+	//
+	.article__item {
+		width: 224px;
+		height: 72px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 16px 20px 16px;
+		background: rgb(255, 255, 255);
+		border: 1px solid rgb(234, 234, 234);
+		border-radius: 6px;
+	}
+
+	.article__image {
+		max-width: 130px;
+		max-height: 50px;
+	}
+
+	.article__span {
+		display: flex;
+		align-items: center;
+	}
+
+	.article__button {
+		position: relative;
+		text-align: center;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: -0.2px;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+	}
+
+	// types style from 768px
+
+	.types {
+		padding-top: 40px;
+	}
+
+	.types__title {
+		margin: 0;
+		margin-bottom: 24px;
+		padding: 16px;
+		padding-left: 26px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+		color: #7e7e82;
+	}
+	//
+	.types__list {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		column-gap: 24px;
+		padding-left: 32px;
+		max-width: 1140px;
+		overflow: hidden;
+		height: 160px;
+		transition-duration: 0.5s;
+	}
+
+	.types__show {
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		column-gap: 24px;
+		padding-left: 32px;
+		max-width: 1140px;
+		transition-duration: 0.5s;
+	}
+	//
+	.types__item {
+		height: 160px;
+		padding: 9px;
+		border-radius: 6px;
+		background-color: #fff;
+		background-image: url(/src/imgblock3/ic_gonext.svg);
+		background-repeat: no-repeat;
+		background-position: right 16px bottom 16px;
+		border: 1px solid rgb(234, 234, 234);
+		border-radius: 6px;
+		width: 224px;
+	}
+
+	.types__link {
+		width: 240px;
+		height: 160px;
+		font-size: 16px;
+		padding: 6px;
+		display: block;
+	}
+
+	.types__span {
+		display: flex;
+		padding-left: 20px;
+		padding-top: 20px;
+	}
+
+	.types__button {
+		text-align: center;
+		color: rgb(27, 28, 33);
+		font-family: TTLakes;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: -0.2px;
+		cursor: pointer;
+		padding: 0;
+		border: none;
+		font: inherit;
+		color: inherit;
+		background-color: transparent;
+	}
+
+	//  Prices styles from 768
+
+	.prices {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+
+	.prices__title {
+		padding: 16px;
+		padding-left: 26px;
+		padding-top: 34px;
+		border-radius: 6px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 129%;
+		letter-spacing: 0.01em;
+		position: relative;
+	}
+	// price container style
+
+	.prices__container {
+		margin-left: 24px;
+		max-width: 1100px;
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(8, 60px);
+		align-items: center;
+		background-color: #ffffff;
+	}
+
+	.p::nth-child(1) {
+		background-color: #f8f8f8;
+	}
+
+	.prices__header_period {
+		/* Занимает один ряд и
+		растягивается на две колонки */
+		grid-column: span 2;
+	}
+
+	.prices__commercial_offer_text {
+		padding-top: 30px;
+		grid-column: span 4;
+	}
+
+	.prices__main_title,
+	.prices__header_title {
+		padding-left: 24px;
+	}
+
+	// price main style
+
+	.prices__main_button {
+		background-image: url(/src/imgblock4/buttonBlock4.svg);
+		background-repeat: no-repeat;
+		display: block;
+		height: 32px;
+		width: 120px;
+	}
+
+	.prices__commercial_offer_link::after {
+		content: url(/src/imgblock4/ic_moreBlock4.svg);
+		text-align: center;
+		position: relative;
+		top: 6px;
+	}
+
+	.prices__commercial_offer_link {
+		padding-top: 20px;
+	}
+
+	// footer 768 px
+
+	.footer {
+		font-size: 14px;
+	}
+	.footer__container {
+		padding: 20px;
+		padding-top: 100px;
+		display: grid;
+		width: auto;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(1, 60px);
+		align-items: center;
+	}
+	.footer__privacy-policy {
+		font-size: 14px;
+	}
+}

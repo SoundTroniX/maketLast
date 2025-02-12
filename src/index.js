@@ -1,0 +1,11 @@
+import './index.html';
+import './index.scss';
+import './js/script';
+import './js/swiper';
+import './js/block3';
+import './js/block2';
+import './js/modalFeedback';
+import './js/modalCall';
+import './js/readMore';
+import './js/menu768px';
+import './js/menu320px';

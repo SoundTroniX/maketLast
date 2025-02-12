@@ -1,0 +1,186 @@
+@use '../abstracts/mixins';
+
+.main {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+}
+
+@include mixins.xl {
+	.main {
+		font-size: 25px;
+	}
+}
+
+
+@include mixins.xxl {
+}
+
+
+.main__section {
+	padding-left: 320px;
+}
+.main__h1 {
+	font-family: TTLakes;
+	color: rgb(27, 28, 33);
+	font-size: 28px;
+	font-weight: 700;
+	padding-left: 36px;
+	border-left: 4px solid #41f6d7;
+}
+
+.main__title {
+	margin-top: 25px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: start;
+}
+
+/*
+	Стили слайд меню 1120px и больше 
+	*/
+
+.nav__list::-webkit-scrollbar {
+	display: none;
+}
+
+.nav__slide {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.nav__list {
+	display: flex;
+	overflow-x: scroll;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+	margin-left: 25px;
+}
+
+.nav__item {
+	padding: 7px 15px 7px 15px;
+	border: 2px solid transparent;
+}
+
+.nav__item:hover {
+	border: 2px solid rgb(184, 255, 236);
+	border-radius: 6px;
+	background-color: rgb(255, 255, 255);
+}
+
+.nav__link {
+	white-space: pre;
+	color: rgb(126, 126, 130);
+	font-family: TTLakes;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/*
+	Стили первого блока 1120px 
+	*/
+
+.main__text {
+	width: auto;
+	height: auto;
+	color: rgb(27, 28, 33);
+	font-family: TTLakes;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-bottom: 15px;
+	max-width: 500px;
+	max-height: 300px;
+	margin-left: 24px;
+}
+
+.main__text_block {
+	height: 160px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	transition-duration: 0.5s;
+}
+
+.main__text_block-show {
+	height: 320px;
+	margin-bottom: 10px;
+	transition-duration: 0.5s;
+}
+
+.main__about {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 auto;
+	justify-content: space-between;
+	height: auto;
+	
+}
+
+.main__p1 {
+	margin-left: 16px;
+	color: rgb(27, 28, 33);
+	font-family: TTLakes;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-bottom: 14px;
+	width: auto;
+	margin-bottom: 20px;
+}
+
+.main__p2,
+.main__p3,
+.main__p4 {
+	margin-left: 16px;
+	color: rgb(27, 28, 33);
+	font-family: TTLakes;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	margin-bottom: 14px;
+	width: auto;
+}
+
+.readmore__text {
+	color: rgb(27, 28, 33);
+	font-family: TTLakes;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.readmore__expand {
+	background-image: url(/src/img1.3/ic_expand.svg);
+	width: 25px;
+	height: 20px;
+}
+
+.readmore {
+	display: flex;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	justify-content: space-between;
+	border: none;
+	outline: none;
+	background-color: rgb(248, 248, 248);
+}
+
+.main__picture {
+	padding-top: 10px;
+	margin-left: 20px;
+}
+
+.main__picture-1 {
+	width: 531px;
+	height: 307px;
+}
+
+// Стили для планшетов
+
+@media (min-width: 767px) and (max-width: 1120px) {
+	body {
+	  max-width: 1140px;
+	}
+	
+}

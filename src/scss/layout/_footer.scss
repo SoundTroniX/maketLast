@@ -1,0 +1,27 @@
+@use '../abstracts/mixins';
+
+
+@include mixins.xl {
+	.footer {
+		font-size: 25px;
+	}
+}
+
+@include mixins.xxl {
+	.footer {
+		padding-left: 330px;
+		font-size: 14px;
+	}
+	.footer__container {
+	    padding: 20px;
+		padding-top: 100px;
+		display: grid;
+		width: 1060px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(1, 60px);
+		align-items: center;
+	}
+	.footer__privacy-policy{
+		font-size: 14px;
+	}
+}
