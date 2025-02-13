@@ -9,3 +9,9 @@ openCallback.addEventListener('click', () => {
 closeCallback.addEventListener('click', () => {
     modalCallback.close();
 })
+
+let openCallBackHeaderBtn = document.querySelector('.header__call');
+
+openCallBackHeaderBtn.addEventListener('click', () => {
+    modalCallback.showModal();
+})
