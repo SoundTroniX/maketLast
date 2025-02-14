@@ -552,7 +552,7 @@ a {
 
 	.prices__title_slide {
 		font-size: 14px;
-		width: 180px;
+		width: 80%;
 		color: #7E7E82;
 		font-weight: 500;
         line-height: 16px;
@@ -560,6 +560,7 @@ a {
 	}
 
 	.prices__p {
+		width: 80%;
 		color:  #1B1C21;
 		font-weight: 400;
 		margin-bottom: 10px;
@@ -567,6 +568,8 @@ a {
 
 	.price__order_button {
 		background-image: url(/src/imgblock4/Zakaztb.svg);
+		position: absolute;
+		right: 10px;
 		width: 120px;
 		height: 32px;
 	}
