@@ -15,6 +15,9 @@
 	.page {
 		margin: 0 auto;
 		max-width: 1440px;
+		width: 100%;
+		overflow: auto;
+		overflow-x: hidden;
 	}
 
 	.page__scroll {
@@ -134,8 +137,8 @@
 		margin: 0 auto;
 		height: 100%;
 		background-color: rgb(255, 255, 255);
-		box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-			-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+		box-shadow: 16px 0px 32px 0px rgba(14, 24, 80, 0.1),
+			-2px 0px 4px 0px rgba(69, 79, 126, 0.01);
 	}
 
 	.menu__list {
@@ -243,9 +246,12 @@
 	}
 }
 @media (min-width: 767px) and (max-width: 1365px) {
-	body {
+	.page {
 		margin: 0 auto;
 		max-width: 1140px;
+		width: 100%;
+		overflow: auto;
+		overflow-x: hidden;
 	}
 
 	.page__scroll {
@@ -548,12 +554,11 @@
 		padding-bottom: 20px;
 	}
 
-	.nav__item {
-		padding: 7px 15px 7px 15px;
-		border: 2px solid transparent;
-	}
+	// .nav__item {
+	// 	border: 2px solid transparent;
+	// }
 
-	.nav__item:hover {
+	.nav__link:hover {
 		border: 2px solid rgb(184, 255, 236);
 		border-radius: 6px;
 		background-color: rgb(255, 255, 255);
@@ -565,6 +570,7 @@
 		font-family: TTLakes;
 		font-size: 16px;
 		font-weight: 500;
+		padding: 5px 12px 5px 12px;
 	}
 
 	.nav__list:first-child::after {
@@ -883,7 +889,7 @@
 		max-width: 95vw;
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr 1fr;
-		grid-template-rows: repeat(8, 60px);
+		grid-template-rows: repeat(6, 60px);
 		align-items: center;
 		background-color: #ffffff;
 	}

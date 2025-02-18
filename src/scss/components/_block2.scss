@@ -11,6 +11,7 @@
   }
 
   .article_container {
+    border-top: 1px solid #D9FFF5;
     padding-top: 50px;
     padding-left: 32px;
     margin-left: 0;
@@ -66,6 +67,23 @@
     padding: 0;
     border: none;
     cursor: pointer;
+  }
+
+  .article__button::before {
+    content: "";
+      background-image: url(/src/imgblock3/ic_expand.svg);
+    background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 5px; 
+      display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+  
+  .article__button.show-all::before { 
+      transform: rotate(180deg); /* Поворачиваем иконку на 180 градусов */
   }
 
   .article__list_show {

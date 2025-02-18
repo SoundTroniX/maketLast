@@ -1,15 +1,14 @@
 // Вытащили кнопку
 const typesBtn = document.querySelector('.types__button');
 
-// Вытащили картинку стрелочек рядом с кнопкой
-const typesIcon = document.querySelector('.types__button_img'); 
-
 // Вытащили контейнер где находятся все елементы
 const typesList = document.querySelector('.types__list'); 
 
 
 // обработчик событий для кнопки
 typesBtn.addEventListener('click', function () {
+
+    typesBtn.classList.toggle('show-all'); /* Переключаем класс show-all */
 
     // добавление класса show контейнеру
     typesList.classList.toggle('types__show');
@@ -20,7 +19,4 @@ typesBtn.addEventListener('click', function () {
     } else {
         typesBtn.textContent = 'Показать все';
     }
-    // Ротате
-    const currentRotation = typesIcon.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
-    typesIcon.style.transform = currentRotation;
 });

@@ -15,3 +15,9 @@ let openFeedBackHeaderBtn = document.querySelector('.header__chat');
 openFeedBackHeaderBtn.addEventListener('click', () => {
     modalFeedback.showModal();
 })
+
+modalFeedback.addEventListener('click', function(event) {
+    if (event.target === this) {
+        this.close();
+    }
+});

@@ -4,7 +4,7 @@ body:has(dialog[open]) {
 
 .modal__callback {
     margin-left: auto;
-    width: 515px;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 50;
@@ -112,8 +112,15 @@ body:has(dialog[open]) {
 
 .modal__description_accent {
     color: #FF3E79;
+    font-size: 14px;
 }
 
 .modal__callback::backdrop {
     background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
 }

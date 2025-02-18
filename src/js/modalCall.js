@@ -10,8 +10,15 @@ closeCallback.addEventListener('click', () => {
     modalCallback.close();
 })
 
+
 let openCallBackHeaderBtn = document.querySelector('.header__call');
 
 openCallBackHeaderBtn.addEventListener('click', () => {
     modalCallback.showModal();
 })
+
+modalCallback.addEventListener('click', function(event) {
+    if (event.target === this) {
+        this.close();
+    }
+});
