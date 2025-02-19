@@ -249,7 +249,7 @@
 	.page {
 		margin: 0 auto;
 		max-width: 1140px;
-		width: 100%;
+		width: 100vw;
 		overflow: auto;
 		overflow-x: hidden;
 	}
@@ -549,7 +549,7 @@
 		height: auto;
 		display: flex;
 		flex-wrap: nowrap;
-		overflow-x: scroll;
+		overflow-x: auto;
 		scrollbar-width: none;
 		padding-bottom: 20px;
 	}
@@ -620,6 +620,7 @@
 		justify-content: space-between;
 		row-gap: 5px;
 		column-gap: 5px;
+		margin-bottom: 40px;
 	}
 
 	.main__text_block {
@@ -905,6 +906,7 @@
 	}
 
 	.prices__commercial_offer_text {
+		width: 90%;
 		padding-top: 30px;
 		grid-column: span 4;
 	}

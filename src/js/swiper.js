@@ -35,6 +35,7 @@ const swiper = new Swiper('.swiper-container', {
     ,
     380: {
       enabled: false,
+	  loop: false,
     }
 	}
 });

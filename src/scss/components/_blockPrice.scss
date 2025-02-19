@@ -36,8 +36,8 @@
 
 .prices__coommercial_container {
   display: flex;
-  flex-wrap: wrap;
-  width: 50vw;
+  flex-direction: column;
+  width: 100%;
 }
 
 .prices__header_period{
