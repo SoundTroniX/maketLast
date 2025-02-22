@@ -4,21 +4,23 @@
 }
 
 .types__container {
-	border-top: 1px solid #D9FFF5;
 	margin-bottom: 50px;
 }
 
 .types__title {
+	background-image: url(/src/imgblock3/gradient1300.png);
+	line-height: 70px;
+    border-top: 1px solid #D9FFF5;
 	margin: 0;
 	margin-bottom: 24px;
 	padding: 16px;
-	padding-left: 26px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
 	letter-spacing: -0.01em;
 	text-transform: uppercase;
 	color: #7e7e82;
+	padding-left: 26px;
 }
 
 .types__list {
@@ -73,6 +75,7 @@
 	font: inherit;
 	color: inherit;
 	background-color: transparent;
+	font-weight: 500;
 }
 
 .types__button::before {

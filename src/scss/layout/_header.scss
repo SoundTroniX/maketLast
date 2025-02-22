@@ -128,7 +128,7 @@
 Стили для меню
 */  
 
-	.menu {
+	.menu__close {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -137,8 +137,8 @@
 		margin: 0 auto;
 		height: 100%;
 		background-color: rgb(255, 255, 255);
-		box-shadow: 16px 0px 32px 0px rgba(14, 24, 80, 0.1),
-			-2px 0px 4px 0px rgba(69, 79, 126, 0.01);
+		// box-shadow: 16px 0px 32px 0px rgba(14, 24, 80, 0.1),
+		// 	-2px 0px 4px 0px rgba(69, 79, 126, 0.01);
 	}
 
 	.menu__list {
@@ -266,25 +266,25 @@
 	}
 
 	// Menu STYLES 
+	
+	.menu__close {
+		display: none;
+		visibility: hidden;
+	}
+
 	.menu {
 		z-index: 50;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		position: fixed;
+		visibility: visible;
 		width: 320px;
 		margin: 0 auto;
 		height: 100vh;
 		background-color: rgb(255, 255, 255);
 		box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
 			-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-	}
-
-	// overlay
-
-	.menu__close {
-		display: none;
-		visibility: hidden;
 	}
 
 	.menu__list {
@@ -709,6 +709,7 @@
 		font-size: 16px;
 		color: #7e7e82;
 		min-height: 56px;
+		padding-left: 0;
 	}
 
 	.article_container {
@@ -790,7 +791,7 @@
 		margin: 0;
 		margin-bottom: 24px;
 		padding: 16px;
-		padding-left: 26px;
+		padding-left: 32px;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 150%;
@@ -850,6 +851,7 @@
 	}
 
 	.types__button {
+		font: inherit;
 		text-align: center;
 		color: rgb(27, 28, 33);
 		font-family: TTLakes;
@@ -859,7 +861,6 @@
 		cursor: pointer;
 		padding: 0;
 		border: none;
-		font: inherit;
 		color: inherit;
 		background-color: transparent;
 	}
@@ -878,7 +879,7 @@
 		padding-top: 34px;
 		border-radius: 6px;
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 129%;
 		letter-spacing: 0.01em;
 		position: relative;

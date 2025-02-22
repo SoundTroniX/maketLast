@@ -15,14 +15,13 @@
 // });
 
 const swiper = new Swiper('.swiper-container', {
-	enabled: false,
 	breakpoints: {
 		320: {
 			enabled: true,
 			loop: true,
 			direction: 'horizontal',
 			spaceBetween: 16,
-			slidesPerView: 1.25,
+			slidesPerView: 'auto',
 
 			pagination: {
 				el: '.swiper-pagination',
@@ -34,8 +33,35 @@ const swiper = new Swiper('.swiper-container', {
 		}
     ,
     380: {
-      enabled: false,
-	  loop: false,
+		enabled: true,
+		loop: true,
+		direction: 'horizontal',
+		spaceBetween: 18,
+		slidesPerView: 'auto',
+
+		pagination: {
+			el: '.swiper-pagination',
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			slideClass: 'swiper-slide',
+			slideVisibleClass: 'swiper-slide-visible'
+		}
+    }
+	,
+	450: {
+		enabled: true,
+		loop: true,
+		direction: 'horizontal',
+		spaceBetween: 16,
+		slidesPerView:'auto',
+
+		pagination: {
+			el: '.swiper-pagination',
+			slidesPerView: 'auto',
+			watchSlidesProgress: true,
+			slideClass: 'swiper-slide',
+			slideVisibleClass: 'swiper-slide-visible'
+		}
     }
 	}
 });

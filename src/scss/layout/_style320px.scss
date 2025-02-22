@@ -4,6 +4,11 @@
 */
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+	.unscroll{
+		overflow:hidden;
+		}
+	
 	.page {
 	  margin: 0 auto;
 	  max-width: 100%;
@@ -48,6 +53,12 @@
 
 
 // Menu STYLES 
+
+.menu__close {
+	display: none;
+	visibility: hidden;
+}
+
 .menu {
 	left: 0;
 	z-index: 50;
@@ -55,18 +66,12 @@
 	flex-direction: column;
 	justify-content: space-between;
 	position: fixed;
+	visibility: visible;
 	width: 320px;
-	height: 740px;
+	height: 100vh;
 	background-color: rgb(255, 255, 255);
 	box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
 		-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-// overlay
-
-.menu__close {
-	display: none;
-	visibility: hidden;
 }
 
 .menu__list {
@@ -523,6 +528,7 @@ a {
     .block2__title,
     .types__slide_title,
     .price__slide_title {
+	background-image: url(/src/imgblock3//gradient.png);
     font-family: TTLakes;
     font-size: 16px;
     color: #7e7e82;
@@ -638,11 +644,13 @@ a {
 	  }
 	
 	.modal__callback {
-		margin: 0;
+		// margin: 0;
 		width: 100vw;
 		height: 100vh;
 		position: fixed;
 		z-index: 50;
+		left: 0;
+		top: 0;
 	}
 	
 	.modal__callback_open {
@@ -652,6 +660,8 @@ a {
 		height: 100vh;
 		border: none;
 		margin-left: auto;
+		position: fixed;
+		right: 0;
 	}
 	
 	.modal__title {
@@ -748,7 +758,7 @@ a {
 	}
 	
 	.modal__feedback {
-		margin: 0;
+		margin-left: 0;
 		width: 100vw;
 		height: 100vh;
 		position: fixed;
@@ -762,6 +772,8 @@ a {
 		height: 100vh;
 		width: 320px;
 		margin-left: auto;
+		position: fixed;
+		right: 0;
 	}
 	
 	.modal__title {

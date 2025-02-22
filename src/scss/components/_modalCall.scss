@@ -3,15 +3,15 @@ body:has(dialog[open]) {
   }
 
 .modal__callback {
-    margin-left: auto;
+    // margin-left: auto;
     width: 515px;
     height: 100vh;
     position: fixed;
     z-index: 50;
+    left: auto;
 }
 
 .modal__callback_open{
-
     margin-left: 72px;
     box-shadow: 0px 16px 52px 0 rgba(14,24,80,.2);
     border-left: 1px solid #41f6d7;
