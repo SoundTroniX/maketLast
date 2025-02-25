@@ -9,6 +9,7 @@ body:has(dialog[open]) {
     position: fixed;
     z-index: 50;
     left: auto;
+    overflow: hidden;
 }
 
 .modal__callback_open{
@@ -16,6 +17,8 @@ body:has(dialog[open]) {
     box-shadow: 0px 16px 52px 0 rgba(14,24,80,.2);
     border-left: 1px solid #41f6d7;
     height: 100vh;
+    position: fixed;
+    bottom: 0;
 }
 
 .modal__title {
@@ -37,7 +40,7 @@ body:has(dialog[open]) {
     width: 4px;
     height: 40px;
     position: absolute;
-    left: 72px;
+    left: 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background-color: #41f6d7;
@@ -117,11 +120,11 @@ body:has(dialog[open]) {
 }
 
 .modal__callback::backdrop {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 100;
+    // z-index: 100;
 }

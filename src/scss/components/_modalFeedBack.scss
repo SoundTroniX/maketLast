@@ -8,6 +8,7 @@ body:has(dialog[open]) {
     height: 100vh;
     position: fixed;
     z-index: 40;
+    overflow: hidden;
 }
 
 .modal__feedback_open{
@@ -15,6 +16,8 @@ body:has(dialog[open]) {
     box-shadow: 0px 16px 52px 0 rgba(14,24,80, 0.5);
     border-left: 1px solid #41f6d7;
     height: 100vh;
+    position: fixed;
+    bottom: 0;
 }
 
 .modal__title {
@@ -23,24 +26,23 @@ body:has(dialog[open]) {
     margin-bottom: 24px;
     padding-left: 16px;
     display: flex;
-    align-items: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 133%;
     letter-spacing: -0.03em;
     color: black;
+
 }
 
-.modal__title::before {
-    content: "";
-    width: 4px;
-    height: 40px;
-    position: absolute;
-    left: 72px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background-color: #41f6d7;
-}
+// .modal__title::before {
+//     content: "";
+//     width: 4px;
+//     height: 40px;
+//     position: static;
+//     // border-top-right-radius: 4px;
+//     // border-bottom-right-radius: 4px;
+//     background-color: #41f6d7;
+// }
 
 
 .modal__form {
@@ -122,10 +124,10 @@ body:has(dialog[open]) {
 
 
   .modal__feedback::backdrop {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }

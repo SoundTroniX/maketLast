@@ -906,4 +906,8 @@ a {
 		inset: 0px;
 	}
 
+	body:has(dialog[open]) {
+		overflow: hidden;
+	  }
+
 }

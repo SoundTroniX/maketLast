@@ -27,9 +27,13 @@
     max-width: 98%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 60px 80px 80px 80px 80px 80px;
     align-items: center;
     background-color: #FFFFFF;
+}
+
+.prices__container > *:nth-child(-n + 3) {
+  background-color: #F8F8F8;
 }
 
 .p::nth-child(1) {
@@ -80,4 +84,10 @@
   padding-top: 20px;
   display: block;
   padding-left: 24px;
+}
+
+.prices__header_period,
+.prices__header_cost,
+.prices__header_title {
+  height: 100%;
 }

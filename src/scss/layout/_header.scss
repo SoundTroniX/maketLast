@@ -36,6 +36,8 @@
 	  Header стили 1120px и больше
 	  */
 
+	  
+
 		.header__repair {
 			background-image: url(/src/img1.3/ic_repair.svg);
 			width: 40px;
@@ -54,7 +56,7 @@
 			align-items: center;
 			height: 90px;
 			max-width: 1600px;
-			margin-bottom: -65px;
+			margin-bottom: -70px;
 			padding-top: 40px;
 		}
 
@@ -62,23 +64,23 @@
 		.header__request {
 			display: flex;
 			align-items: center;
+			position: relative;
 		}
+
 
 		.header__menu-second,
 		.header__menu-first {
 			display: flex;
-			justify-content: space-around;
 			align-items: center;
+			justify-content: space-between;
 			gap: 16px;
+			width: 240px;
 		}
 
 		.header__menu-first {
 			margin-left: 25px;
 		}
 
-		.header__menu-second {
-			margin-right: 25px;
-		}
 
 		.header__call,
 		.header__chat,
@@ -94,9 +96,11 @@
 		.header__text2 {
 			color: rgb(27, 28, 33);
 			font-family: TTLakes;
-			font-size: 16px;
-			font-weight: 500;
 			margin-right: 5px;
+			font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
 		}
 		font-size: 30px;
 	}
@@ -124,6 +128,18 @@
 		margin-right: 50px;
 	}
 
+	.main__container_request {
+		display: flex;
+		flex-wrap: nowrap;
+		// height: 40px;
+		position: relative;
+		right: 0;
+		margin-left: auto;
+		margin-right: 20px;
+		width: 400px;
+		justify-content: space-around;
+	  }
+
 	/* 
 Стили для меню
 */  
@@ -150,7 +166,7 @@
 	}
 
 	a {
-		font-size: 18px;
+		font-size: 16px;
 		font-family: TTLakes;
 		font-weight: 500;
 		vertical-align: center;
